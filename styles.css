@@ -18,32 +18,48 @@ body{
 } */
 
 /* ........................................................................................ */
+.header{
+    background-color: cadetblue;
+}
 
-.nav {
+.header nav {
     height: 10vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    /* grid-area: navigation; */
-    background-color: cadetblue;
     font-weight: bold;
-    padding: 10px 5% 10px 5%;
+    margin-bottom: 0%;
   }
   
-  .nav ul li {
+  .header nav ul li {
     display: inline-block;
     padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+    background-color: blue;
+    margin: 0%;
   }
   
-  .nav ul li a {
+  .header nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+    margin-bottom: 0%;
   }
 
-  .nav ul li a:hover {
+  .header nav ul li a:hover {
     color: beige;
     /* box-shadow: 0px 0px 15px rgb(142, 252, 132); */
+  }
+
+  .header .logoHorizontal {
+    text-align: center;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
   
   
@@ -98,6 +114,11 @@ main {
     text-align: left;
     width: 50;
     height:auto;
+}
+
+.PMain{
+background-color: lightpink;
+border-radius: 10px;
 }
 
 main ul li{
