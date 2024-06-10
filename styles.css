@@ -1,4 +1,5 @@
-html, body{
+
+body{
     background-image: url(./assets/images/versusBody.JPG);
     background-size: cover !important;
     background-attachment: fixed;
@@ -6,7 +7,7 @@ html, body{
     background-position: center;
     margin: 0;
     box-sizing: border-box;
-    height: 100%;
+    font-family: sans-serif;
 }
 
 /* ........................................................................................ */
@@ -14,6 +15,7 @@ html, body{
     background-color: cadetblue;
     position: fixed;
     top: 0%;
+    width: 100%;
 }
 
 .header nav {
@@ -108,27 +110,31 @@ aside{
     height: auto;
 }
 
-body{
-    font-family: sans-serif;
-}
-
 .loguito{
     justify-self: center;
     padding-right: 20%;
 }
 
-/* .footer {
-    grid-area: footer;
-    padding: 10px;
-    background-color: rgb(31, 107, 54);
-    display: flex;
-    justify-content: center;
+@media(max-width:320px) {
+    .logoFooter{
+        width: 2%;
+        height: auto;
+    }
+    .loguito{
+        justify-self: center;
+        padding-right: 10%;
+    }
+    .footer li .logoFooter{
+        width: 2vh;
+        height: auto;
+    }
+    .footer li{
+        list-style-type: none;
+        display: inline;
+        margin-right: 2vh;
+        position: static;
+    }
 }
-  
-.footer a {
-    display: inline-block;
-    margin: 0 7px 0 7px;
-} */
 
 .footer{
     background-color: rgb(227, 233, 181);
