@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOSOTROS</title>
-    <link rel="stylesheet" href="./assets/styles/css/styles.css">
+    <link rel="stylesheet" href="./../assets/styles/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
@@ -38,7 +38,53 @@
         </div>
     </header>
     <main>
-        <ul>
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./../assets/images/moreVersus.jpeg" class="d-block w-100" alt="More">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>More Gonzales</h5>
+                          <p>Es actriz, bailarina y fanática de los musicales. 
+                            En una constante lucha entre crazylook y reina de las flores, pero siempre con un tecito en la mano. Nunca da una batalla por perdida, y siempre te tira la anécdota más bizarra.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./../assets/images/nanoVersus.jpeg" class="d-block w-100" alt="NANO">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Nano Pepe</h5>
+                          <p>SDivertido, hegemónico, amante de las medias, del buen fútbol y del mate. Encima de todo eso es profesor de fútbol femenino y un pollerudo innato</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./../assets/images/joacoVersus.jpeg" class="d-block w-100" alt="Joaco">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Joaco</h5>
+                          <p>SUn tipo irónico, versátil, chistoso y estructurado.
+                            Amante de la comedia, el romance y la comida. Afirma que Argentina es el mejor país del mundo y es un fundamentalista total de reírse uno mismo.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+          </div>
+        
+
+        <!-- <ul>
             <li><img id="moreVersus" class="fotosConocenos" src="./../assets/images/moreVersus.jpeg" alt="moreVersus">Dulce, tierna y divertida.
                 Es actriz, bailarina y fanática de los musicales. 
                 En una constante lucha entre crazylook y reina de las flores, pero siempre con un tecito en la mano. Nunca da una batalla por perdida, y siempre te tira la anécdota más bizarra.</li>
@@ -47,7 +93,7 @@
             Amante de la comedia, el romance y la comida. Afirma que Argentina es el mejor país del mundo y es un fundamentalista total de reírse uno mismo.</li>
 
             <li><img id="moreVersus" class="fotosConocenos" src="./../assets/images/nanoVersus.jpeg" alt="moreVersus">Divertido, hegemónico, amante de las medias, del buen fútbol y del mate. Encima de todo eso es profesor de fútbol femenino y un pollerudo innato.</li>
-        </ul>
+        </ul> -->
     </main>
     <footer class="footer">
         <ul class="nav justify-content-center">
@@ -61,5 +107,9 @@
                 <a class="nav-link" href="https://www.instagram.com/versus_str/?hl=es-la"><img class="logoFooter" src="./../assets/images/instagram.jpg.png" alt="canalTwitch"></a></li></li>
           </ul>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
