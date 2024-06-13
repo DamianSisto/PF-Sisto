@@ -85,9 +85,14 @@ main {
     height:auto;
 }
 
-.PMain{
-background-color: lightpink;
-border-radius: 10px;
+#PMain {
+    background-color: lightpink;
+    border-radius: 10px;
+  }
+
+.form-label{
+    background-color: khaki;
+    border-radius: 5px;
 }
 
 main ul li{

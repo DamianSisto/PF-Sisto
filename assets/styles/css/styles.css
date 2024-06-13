@@ -82,9 +82,14 @@ main {
   height: auto;
 }
 
-.PMain {
+#PMain {
   background-color: lightpink;
   border-radius: 10px;
+}
+
+.form-label {
+  background-color: khaki;
+  border-radius: 5px;
 }
 
 main ul li {
