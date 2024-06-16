@@ -11,7 +11,7 @@ body {
 
 /* ........................................................................................ */
 .header {
-  background-color: cadetblue;
+  background-color: rgb(42, 37, 37);
   position: fixed;
   top: 0%;
   width: 100%;
@@ -34,12 +34,12 @@ body {
 
 .header nav ul li a {
   text-decoration: none;
-  color: black;
+  color: rgb(221, 214, 197);
   font-size: 1.2rem;
 }
 
 .header nav ul li a:hover {
-  color: beige;
+  color: rgb(240, 208, 164);
   /* box-shadow: 0px 0px 15px rgb(142, 252, 132); */
 }
 
@@ -68,6 +68,18 @@ main {
   margin-bottom: 5%;
   border-color: coral;
   padding-bottom: 50px;
+}
+
+#PMain {
+  background-color: rgba(238, 130, 238, 0.908);
+  border-radius: 10px;
+  padding: 1%;
+}
+
+#form {
+  background-color: rgba(240, 194, 108, 0.852);
+  border-radius: 10px;
+  padding: 2%;
 }
 
 .videoDerecha {
@@ -101,6 +113,10 @@ aside {
   padding: 5%;
   justify-self: unset;
   padding-bottom: 50px;
+}
+
+.MainNosotros {
+  justify-content: center;
 }
 
 .fotosConocenos {
@@ -139,7 +155,7 @@ aside {
   }
 }
 .footer {
-  background-color: rgb(227, 233, 181);
+  background-color: brown;
   /* object-position: 0%; */
   width: 100%;
   justify-content: center;
