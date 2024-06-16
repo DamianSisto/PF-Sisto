@@ -76,10 +76,25 @@ main {
   padding: 1%;
 }
 
-#form {
+#formVisitanos {
   background-color: rgba(240, 194, 108, 0.852);
   border-radius: 10px;
   padding: 2%;
+}
+
+#formTrabaja {
+  background-color: rgba(149, 194, 243, 0.852);
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.container text-center {
+  padding-top: 2%;
+}
+
+#video1 {
+  background-color: aqua;
+  border-radius: 5px;
 }
 
 .videoDerecha {
@@ -92,6 +107,10 @@ main {
   text-align: left;
   width: 50;
   height: auto;
+}
+
+section {
+  padding-top: 5%;
 }
 
 .PMain {
