@@ -13,7 +13,8 @@ body{
 
 /* ........................................................................................ */
 .header{
-    background-color: cadetblue;
+    // background-color: cadetblue;
+    background-color: rgb(42, 37, 37);
     position: fixed;
     top: 0%;
     width: 100%;
@@ -36,14 +37,15 @@ body{
   
   .header nav ul li a {
     text-decoration: none;
-    color: black;
+    // color: black;
+    color: rgb(221, 214, 197);
     font-size: 1.2rem;
   }
 
   .header nav ul li a:hover {
-    color: beige;
+    color: rgb(240, 208, 164);
     /* box-shadow: 0px 0px 15px rgb(142, 252, 132); */
-  }
+  } 
 
   .header .logoHorizontal {
     text-align: center;
@@ -72,6 +74,60 @@ main {
     padding-bottom: 50px;
 }
 
+#PMain{
+    background-color: rgba(238, 130, 238, 0.908);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#formVisitanos{
+    background-color: rgba(240, 194, 108, 0.852);
+    border-radius: 10px;
+    padding: 2%;
+}
+
+#formTrabaja{
+    background-color: rgba(149, 194, 243, 0.852);
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.container text-center{
+    padding-top: 2%;
+}
+
+
+#video1{
+    background-color: #f26d9ed1;
+    border-radius: 10px;
+    padding-top: 2%;
+}
+#video2{
+    background-color: #04acbfd4;
+    border-radius: 10px;
+    padding: 2%;
+}
+#video3{
+    background-color: #ff7e4bd2;
+    border-radius: 10px;
+    padding-top: 2%;
+}
+#video4{
+    background-color: #00b689cd;
+    border-radius: 10px;
+    padding-top: 2%;
+}
+#video5{
+    background-color: #ffca0bc2;
+    border-radius: 10px;
+    padding-top: 2%;
+}
+#video6{
+    background-color: #c584bcd0;
+    border-radius: 10px;
+    padding-top: 2%;
+}
+
 .videoDerecha{
     text-align: right;
     width: 50;
@@ -92,7 +148,15 @@ main {
 
 .form-label{
     background-color: khaki;
-    border-radius: 5px;
+    border-radius: 5px;}
+
+section{
+    padding-top: 5%;
+}
+
+.PMain{
+background-color: lightpink;
+border-radius: 10px;
 }
 
 main ul li{
@@ -103,13 +167,16 @@ main ul li{
 .carousel{
     width: 50%;
     height: auto;
-    
 }
 
 aside{
   padding: 5%;  
   justify-self: unset;
   padding-bottom: 50px;
+}
+
+.MainNosotros{
+    justify-content: center;
 }
 
 .fotosConocenos{
@@ -149,7 +216,8 @@ aside{
 }
 
 .footer{
-    background-color: rgb(227, 233, 181);
+    // background-color: rgb(227, 233, 181);
+    background-color: brown;
     /* object-position: 0%; */
     width: 100%;
     justify-content: center;
