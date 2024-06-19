@@ -1,60 +1,73 @@
 @import "variables";
 
+
 body{
     background-image: url(./../../images/versusBody.JPG);
     background-size: cover !important;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    // background-attachment: fixed;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // margin: 0;
+    // box-sizing: border-box;
+    // font-family: sans-serif;
 }
 
-/* ........................................................................................ */
+
+@media (max-width:450px){
+    .body{
+        background-image: url(./../../images/versusBody-mobile.jpg);
+        margin: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+///////////////////// HEADER ///////////////////////////
+
 .header{
     // background-color: cadetblue;
-    background-color: rgb(42, 37, 37);
+    
     position: fixed;
     top: 0%;
     width: 100%;
+    #logoHorizontal {
+        text-align: center;
+        height: auto;
+        width: auto;
+        max-width: 40%;
+        margin: 3%;
+      }
+    nav {
+        background-color: rgb(42, 37, 37) !important;
+        height: 10vh;
+        display: flex;
+        // justify-content: end;
+        align-items: center;
+        font-weight: bold;
+        ul li {
+            display: inline-block;
+            padding: 0px 15px;
+            justify-content: center;
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: rgb(221, 214, 197);
+                font-size: 1.2rem;
+                &:hover {
+                    color: rgb(240, 208, 164);
+                    /* box-shadow: 0px 0px 15px rgb(142, 252, 132); */
+                  } 
+              }
+          }
+    }
 }
 
-.header nav {
-    height: 10vh;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    font-weight: bold;
-  }
-  
-  .header nav ul li {
-    display: inline-block;
-    padding: 0px 15px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .header nav ul li a {
-    text-decoration: none;
-    // color: black;
-    color: rgb(221, 214, 197);
-    font-size: 1.2rem;
-  }
 
-  .header nav ul li a:hover {
-    color: rgb(240, 208, 164);
-    /* box-shadow: 0px 0px 15px rgb(142, 252, 132); */
-  } 
-
-  .header .logoHorizontal {
-    text-align: center;
-    height: auto;
-    width: auto;
-    max-width: 78%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-  }
+@media (max-width: 990px){
+    #logoHorizontal{
+        max-width: 30%;
+    }
+}
 
 .logo {
     width: 40%;
@@ -64,7 +77,7 @@ body{
     padding-left: 2vh;
     padding-top: 2vh;
 }
-
+//////////////////////////// MAIN ////////////////////////////
 main {
     margin-top: 10%;
     margin-left: 5%;
@@ -72,6 +85,10 @@ main {
     margin-bottom: 5%;
     border-color: coral;
     padding-bottom: 50px;
+    ul li{
+        list-style:none;
+        margin-bottom: 1%;
+    }
 }
 
 #PMain{
@@ -159,13 +176,8 @@ background-color: lightpink;
 border-radius: 10px;
 }
 
-main ul li{
-    list-style:none;
-    margin-bottom: 1%;
-}
-
 .carousel{
-    width: 50%;
+    width: 40%;
     height: auto;
 }
 
@@ -176,7 +188,11 @@ aside{
 }
 
 .MainNosotros{
-    justify-content: center;
+    background-color: blue;
+}
+
+#carouselExampleCaptions{
+    background-color: aquamarine;
 }
 
 .fotosConocenos{
@@ -215,40 +231,28 @@ aside{
     }
 }
 
+
+/////////////  FOOTER  ///////////////
+
 .footer{
-    // background-color: rgb(227, 233, 181);
     background-color: brown;
-    /* object-position: 0%; */
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
     bottom: 0;
-}
-
-.footer ul{
-    margin-bottom: 1vh;
-    margin-top: 1vh;
-}
-
-.footer li{
-    list-style-type: none;
-    display: inline;
-    margin-right: 4vh;
-    position: static;
-}
-
-.footer li .logoFooter{
-    width: 5vh;
-    height: auto;
-}
-
-.footer a i:hover {
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 0px 0px 20px rgb(8, 74, 197);
-}
-
-.logoFooter i:hover{
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 0px 0px 20px rgb(8, 74, 197);
+    ul{
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+    }
+    li{
+        list-style-type: none;
+        display: inline;
+        margin-right: 4vh;
+        position: static;
+        .logoFooter{
+            width: 5vh;
+            height: auto;
+        }
+    }
 }
