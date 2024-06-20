@@ -1,5 +1,5 @@
 .header{
-    position: fixed;
+    position: relative;
     top: 0%;
     width: 100%;
     #logoHorizontal {
@@ -32,10 +32,31 @@
     }
 }
 
-
-@media (max-width: 990px){
+@media (max-width: 450px){
+    header{
+        #nav{
+            .container-fluid{
+                display: inline;
+                .navbar-toggler{
+                    border-color: aliceblue;
+                    bottom-color: aliceblue;
+                    .navbar-toggler-icon{
+                        bottom-color: aliceblue;
+                        border-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
     #logoHorizontal{
         max-width: 30%;
+    }
+    
+    #navbarSupportedContent{
+        background-color: rgb(101, 101, 101);
+    }
+    .navbar-toggler{
+        background-color: aqua;
     }
 }
 

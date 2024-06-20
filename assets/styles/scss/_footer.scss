@@ -13,7 +13,8 @@
     li{
         list-style-type: none;
         display: inline;
-        margin-right: 4vh;
+        margin-right: 2vh;
+        margin-left: 2vh;
         position: static;
         .logoFooter{
             width: 5vh;
@@ -24,18 +25,31 @@
 
 @media (max-width: 450px){
     .footer{
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    bottom: 0;
+        bottom: 0;
         ul{
-            li{
-                margin-right: 1vh;
-            }
+            justify-content: center;
         }
+        
+        
     }
 }
+
+
+    // #ulFooter{
+    // width: 100vw;
+    // justify-content: center;
+    // align-items: center;
+    // display: grid;
+    // //bottom: 0;
+    //     li{
+    //         margin-right: 0vh;
+    //     }
+    //     .logoFooter{
+    //             width: 10%;
+    //             height: auto;
+    //     }
+    // }
+
 
 .logoFooter{
     width: 5%;

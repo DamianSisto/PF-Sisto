@@ -1,10 +1,17 @@
+@import "body";
 .carousel{
     width: 40%;
     height: auto;
 }
-.MainNosotros{
-    background-color: blue;
+#MainNosotros{
+    background-color: rgb(0, 255, 98);
+    justify-content: center;
+    display: contents;
 }
 #carouselExampleCaptions{
-    background-color: aquamarine;
+    align-items: center;
+}
+
+#mainCarousel{
+    
 }

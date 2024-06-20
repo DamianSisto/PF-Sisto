@@ -1,17 +1,3 @@
-body {
-  background-image: url(./../../images/versusBody.JPG);
-  background-size: cover !important;
-  background-attachment: fixed;
-}
-
-@media (max-width: 450px) {
-  .body {
-    background-image: url(./../../images/versus.idea.dos);
-    margin: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
 .footer {
   background-color: rgb(44, 43, 43);
   width: 100%;
@@ -27,7 +13,8 @@ body {
 .footer li {
   list-style-type: none;
   display: inline;
-  margin-right: 4vh;
+  margin-right: 2vh;
+  margin-left: 2vh;
   position: static;
 }
 .footer li .logoFooter {
@@ -37,14 +24,10 @@ body {
 
 @media (max-width: 450px) {
   .footer {
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     bottom: 0;
   }
-  .footer ul li {
-    margin-right: 1vh;
+  .footer ul {
+    justify-content: center;
   }
 }
 .logoFooter {
@@ -78,7 +61,7 @@ body {
   }
 }
 .header {
-  position: fixed;
+  position: relative;
   top: 0%;
   width: 100%;
 }
@@ -111,9 +94,26 @@ body {
   color: rgb(240, 208, 164);
 }
 
-@media (max-width: 990px) {
+@media (max-width: 450px) {
+  header #nav .container-fluid {
+    display: inline;
+  }
+  header #nav .container-fluid .navbar-toggler {
+    border-color: aliceblue;
+    bottom-color: aliceblue;
+  }
+  header #nav .container-fluid .navbar-toggler .navbar-toggler-icon {
+    bottom-color: aliceblue;
+    border-bottom: 8px;
+  }
   #logoHorizontal {
     max-width: 30%;
+  }
+  #navbarSupportedContent {
+    background-color: rgb(101, 101, 101);
+  }
+  .navbar-toggler {
+    background-color: aqua;
   }
 }
 .logo {
@@ -137,15 +137,22 @@ main ul li {
   margin-bottom: 1%;
 }
 main #PMain {
-  background-color: lightpink;
+  background-color: rgba(69, 69, 69, 0.811);
   border-radius: 10px;
   padding: 1%;
 }
-
-#videoIndex {
-  width: 90%;
-  height: auto;
+main #PMain #col #videoIndex {
   border-radius: 10px;
+  padding: 0%;
+}
+main #PMain #col #videoIndex #entrada {
+  height: 30vh;
+  width: 54vh;
+  border-radius: 10px;
+}
+main #PMain #fontIndex {
+  color: antiquewhite;
+  padding: 1% !important;
 }
 
 @media (max-width: 450px) {
@@ -164,21 +171,41 @@ main #PMain {
     font-size: 2px;
   }
   main #contenedorMain {
-    margin-top: 40%;
+    margin-top: 10%;
     margin-bottom: 100%;
+    justify-content: center;
   }
   main #contenedorMain #PMain {
     display: block;
-    background-color: lightpink;
     border-radius: 10px;
     padding: 0%;
     font-size: 16px;
+    justify-content: space-around;
+    background-color: rgba(69, 69, 69, 0.832);
   }
-  #videoIndex {
-    width: 100%;
-    height: auto;
+  main #contenedorMain #PMain #videoIndex {
+    padding: 0% !important;
+    padding-top: 4vh !important;
+  }
+  main #contenedorMain #PMain #videoIndex #entrada {
+    height: 20vh;
+    width: 35vh;
     border-radius: 10px;
-    padding-top: 10%;
+  }
+}
+body {
+  background-image: url(./../../images/versusBody.JPG);
+  background-size: cover !important;
+  background-attachment: fixed;
+}
+
+@media (max-width: 450px) {
+  .body {
+    background-image: url(./../../images/mobile.tres.png);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
   }
 }
 .carousel {
@@ -186,12 +213,14 @@ main #PMain {
   height: auto;
 }
 
-.MainNosotros {
-  background-color: blue;
+#MainNosotros {
+  background-color: rgb(0, 255, 98);
+  justify-content: center;
+  display: contents;
 }
 
 #carouselExampleCaptions {
-  background-color: aquamarine;
+  align-items: center;
 }
 
 #video1 {
@@ -247,6 +276,21 @@ main #PMain {
   height: auto;
 }
 
+body {
+  background-image: url(./../../images/versusBody.JPG);
+  background-size: cover !important;
+  background-attachment: fixed;
+}
+
+@media (max-width: 450px) {
+  .body {
+    background-image: url(./../../images/mobile.tres.png);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+  }
+}
 .container text-center {
   padding-top: 2%;
 }
