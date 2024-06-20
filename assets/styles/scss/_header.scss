@@ -1,0 +1,49 @@
+.header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    #logoHorizontal {
+        text-align: center;
+        height: auto;
+        width: auto;
+        max-width: 40%;
+        margin: 3%;
+      }
+    nav {
+        background-color: rgb(42, 37, 37) !important;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        ul li {
+            display: inline-block;
+            padding: 0px 15px;
+            justify-content: center;
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: rgb(221, 214, 197);
+                font-size: 1.2rem;
+                &:hover {
+                    color: rgb(240, 208, 164);
+                  } 
+              }
+          }
+    }
+}
+
+
+@media (max-width: 990px){
+    #logoHorizontal{
+        max-width: 30%;
+    }
+}
+
+.logo {
+    width: 40%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vh;
+    padding-top: 2vh;
+}
