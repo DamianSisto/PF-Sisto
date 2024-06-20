@@ -1,6 +1,7 @@
 body {
   background-image: url(./../../images/versusBody.JPG);
   background-size: cover !important;
+  background-attachment: fixed;
 }
 
 @media (max-width: 450px) {
@@ -95,6 +96,17 @@ main ul li {
   padding-top: 2%;
 }
 
+#videoIndex {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 450px) {
+  #videoIndex {
+    padding-top: 25%;
+  }
+}
 #video1 {
   background-color: rgba(242, 109, 158, 0.8196078431);
   border-radius: 10px;
@@ -216,6 +228,11 @@ aside {
     position: static;
   }
 }
+#mapaVersus {
+  contain-intrinsic-height: 50%;
+  width: auto;
+}
+
 .footer {
   background-color: brown;
   width: 100%;
@@ -237,6 +254,19 @@ aside {
 .footer li .logoFooter {
   width: 5vh;
   height: auto;
+}
+
+@media (max-width: 450px) {
+  .footer {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+  }
+  .footer ul li {
+    margin-right: 1vh;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
