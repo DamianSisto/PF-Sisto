@@ -1,5 +1,5 @@
 .header{
-    position: relative;
+    position: fixed;
     top: 0%;
     width: 100%;
     #logoHorizontal {
@@ -39,9 +39,9 @@
                 display: inline;
                 .navbar-toggler{
                     border-color: aliceblue;
-                    bottom-color: aliceblue;
+                    border-color: aliceblue;
                     .navbar-toggler-icon{
-                        bottom-color: aliceblue;
+                        border-color: aliceblue;
                         border-bottom: 8px;
                     }
                 }

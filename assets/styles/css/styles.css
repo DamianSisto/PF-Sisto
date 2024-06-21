@@ -61,7 +61,7 @@
   }
 }
 .header {
-  position: relative;
+  position: fixed;
   top: 0%;
   width: 100%;
 }
@@ -100,10 +100,10 @@
   }
   header #nav .container-fluid .navbar-toggler {
     border-color: aliceblue;
-    bottom-color: aliceblue;
+    border-color: aliceblue;
   }
   header #nav .container-fluid .navbar-toggler .navbar-toggler-icon {
-    bottom-color: aliceblue;
+    border-color: aliceblue;
     border-bottom: 8px;
   }
   #logoHorizontal {
@@ -171,6 +171,7 @@ main #PMain #fontIndex {
     font-size: 2px;
   }
   main #contenedorMain {
+    padding-top: 8vh;
     margin-top: 10%;
     margin-bottom: 100%;
     justify-content: center;
