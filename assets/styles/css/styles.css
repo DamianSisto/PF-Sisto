@@ -1,17 +1,358 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "footer";
- *   |         ^^^^^^^^
- *   '
- *   assets\styles\scss\styles.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"footer\";\d\a   \2502          ^^^^^^^^\a   \2575 \a   assets\\styles\\scss\\styles.scss 2:9  root stylesheet";
+.footer {
+  background-color: rgb(44, 43, 43);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  bottom: 0;
 }
+.footer ul {
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+.footer li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 2vh;
+  margin-left: 2vh;
+  position: static;
+}
+.footer li .logoFooter {
+  width: 5vh;
+  height: auto;
+}
+
+@media (max-width: 450px) {
+  .footer {
+    bottom: 0;
+  }
+  .footer ul {
+    justify-content: center;
+  }
+}
+.logoFooter {
+  width: 5%;
+  height: auto;
+}
+
+.loguito {
+  justify-self: center;
+  padding-right: 20%;
+}
+
+@media (max-width: 320px) {
+  .logoFooter {
+    width: 2%;
+    height: auto;
+  }
+  .loguito {
+    justify-self: center;
+    padding-right: 10%;
+  }
+  .footer li .logoFooter {
+    width: 2vh;
+    height: auto;
+  }
+  .footer li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 2vh;
+    position: static;
+  }
+}
+.header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+.header #logoHorizontal {
+  text-align: center;
+  height: auto;
+  width: auto;
+  max-width: 40%;
+  margin: 3%;
+}
+.header nav {
+  background-color: rgb(110, 8, 8) !important;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.header nav ul li {
+  display: inline-block;
+  padding: 0px 15px;
+  justify-content: center;
+  align-items: center;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: rgb(221, 214, 197);
+  font-size: 1.2rem;
+}
+.header nav ul li a:hover {
+  color: rgb(240, 208, 164);
+}
+
+@media (max-width: 450px) {
+  header #nav .container-fluid {
+    display: inline;
+  }
+  header #nav .container-fluid .navbar-toggler {
+    border-color: aliceblue;
+    border-color: aliceblue;
+  }
+  header #nav .container-fluid .navbar-toggler .navbar-toggler-icon {
+    border-color: aliceblue;
+    border-bottom: 8px;
+  }
+  #logoHorizontal {
+    max-width: 30%;
+  }
+  #navbarSupportedContent {
+    background-color: rgb(101, 101, 101);
+  }
+  .navbar-toggler {
+    background-color: aqua;
+  }
+}
+.logo {
+  width: 40%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2vh;
+  padding-top: 2vh;
+}
+
+main {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 50px;
+}
+main ul li {
+  list-style: none;
+  margin-bottom: 1%;
+}
+main #PMain {
+  background-color: rgba(69, 69, 69, 0.811);
+  border-radius: 10px;
+  padding: 1%;
+}
+main #PMain #col #videoIndex {
+  border-radius: 10px;
+  padding: 0%;
+}
+main #PMain #col #videoIndex #entrada {
+  height: 30vh;
+  width: 54vh;
+  border-radius: 10px;
+}
+main #PMain #fontIndex {
+  color: antiquewhite;
+  padding: 1% !important;
+}
+
+@media (max-width: 450px) {
+  main {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 50px;
+  }
+  main ul li {
+    list-style: none;
+    margin-bottom: 1%;
+  }
+  main ul li #font.index h4 {
+    font-size: 2px;
+  }
+  main #contenedorMain {
+    padding-top: 8vh;
+    margin-top: 10%;
+    margin-bottom: 100%;
+    justify-content: center;
+  }
+  main #contenedorMain #PMain {
+    display: block;
+    border-radius: 10px;
+    padding: 0%;
+    font-size: 16px;
+    justify-content: space-around;
+    background-color: rgba(69, 69, 69, 0.832);
+  }
+  main #contenedorMain #PMain #videoIndex {
+    padding: 0% !important;
+    padding-top: 4vh !important;
+  }
+  main #contenedorMain #PMain #videoIndex #entrada {
+    height: 20vh;
+    width: 35vh;
+    border-radius: 10px;
+  }
+}
+main #mainCarousel {
+  position: relative;
+}
+main #mainCarousel #mainNosotros #carouselExampleCaptions .carousel-inner {
+  width: 70vh;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+#card1 {
+  background-color: rgba(242, 109, 158, 0.8196078431);
+  border-radius: 10px;
+  padding-top: 1%;
+}
+
+#card2 {
+  background-color: rgba(4, 172, 191, 0.831372549);
+  border-radius: 10px;
+  padding-top: 1%;
+}
+
+#card3 {
+  background-color: rgba(255, 126, 75, 0.8235294118);
+  border-radius: 10px;
+  padding-top: 1%;
+}
+
+#card4 {
+  background-color: rgba(0, 182, 137, 0.8039215686);
+  border-radius: 10px;
+  padding-top: 1%;
+}
+
+#card5 {
+  background-color: rgba(255, 202, 11, 0.7607843137);
+  border-radius: 10px;
+  padding-top: 1%;
+}
+
+#card6 {
+  background-color: rgba(197, 132, 188, 0.8156862745);
+  border-radius: 10px;
+  padding-top: 1%;
+}
+
+@media (max-width: 450px) {
+  #programacion {
+    padding-top: 10vh;
+  }
+  #programacion #card1 {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(242, 109, 158, 0.8196078431);
+    border-radius: 10px;
+    padding-top: 7%;
+  }
+  #programacion #card2 {
+    background-color: rgba(4, 172, 191, 0.831372549);
+    border-radius: 10px;
+    padding-top: 7%;
+  }
+  #programacion #card3 {
+    background-color: rgba(255, 126, 75, 0.8235294118);
+    border-radius: 10px;
+    padding-top: 7%;
+  }
+  #programacion #card4 {
+    background-color: rgba(0, 182, 137, 0.8039215686);
+    border-radius: 10px;
+    padding-top: 7%;
+  }
+  #programacion #card5 {
+    background-color: rgba(255, 202, 11, 0.7607843137);
+    border-radius: 10px;
+    padding-top: 7%;
+  }
+  #programacion #card6 {
+    background-color: rgba(197, 132, 188, 0.8156862745);
+    border-radius: 10px;
+    padding-top: 7%;
+  }
+}
+#formTrabaja {
+  background-color: rgba(149, 194, 243, 0.852);
+  border-radius: 10px;
+  padding: 2%;
+}
+
+@media (max-width: 450px) {
+  #trabaja {
+    padding-top: 10vh;
+  }
+}
+#formVisitanos {
+  background-color: rgba(240, 194, 108, 0.852);
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.fotosConocenos {
+  width: 40%;
+  height: auto;
+}
+
+div {
+  justify-content: center;
+}
+div #mapaVersus {
+  height: 40vh;
+  width: 41vw;
+  border-radius: 10px;
+}
+
+@media (max-width: 450px) {
+  #form-visitanos {
+    padding-top: 10vh;
+  }
+  .section #mapa {
+    justify-content: center;
+  }
+  .section #mapa #mapaVersus {
+    height: 40vh;
+    width: 86vw;
+    border-radius: 10px;
+  }
+}
+body {
+  background-image: url(./../../images/versusBody.JPG);
+  background-size: cover !important;
+  background-attachment: fixed;
+}
+
+@media (max-width: 450px) {
+  .body {
+    background-image: url(./../../images/mobile.tres.png);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+  }
+}
+.container text-center {
+  padding-top: 2%;
+}
+
+section {
+  padding-top: 5%;
+}
+
+aside {
+  padding: 5%;
+  justify-self: unset;
+  padding-bottom: 50px;
+}
+
+#mapaVersus {
+  contain-intrinsic-height: 50%;
+  width: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

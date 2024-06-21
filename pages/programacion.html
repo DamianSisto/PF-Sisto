@@ -9,61 +9,89 @@
 </head>
 <body>
     <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 col-sm-12">
-                    <a href="./../index.html">
-                        <img class="logoHorizontal" src="./../assets/images/logoHorizontal.png" alt="logoHorizontal">
-                        </a> 
-                    </div>
-                <div class="col-md-9 col-sm-12">
-                    <nav>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="./../pages/programacion.html">Programación</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="./../pages/nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="./../pages/visitanos.html">Visitanos</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="./../pages/trabaja.html">Trabajá con nosotros</a>
-                            </li>
-                          </ul>
-                    </nav>
-                </div>
+        <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./../index.html"><img id="logoHorizontal" src="./../assets/images/logoHorizontal.png" alt="logoHorizontal"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../pages/nosotros.html">NOSOTROS</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../pages/programacion.html">PROGRAMACIÓN</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../pages/visitanos.html">VISITANOS</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../pages/trabaja.html">TRABAJA CON NOSOTROS</a>
+                </ul>
+              </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
-        <div class="container text-center">
-            <div class="row" id="video1">
+        <div class="container text-center" id="programacion">
+            <div class="row" id="card1">
                 <div class="col">
-                    <iframe src="https://www.youtube.com/embed/zsMzX1noA90" title="VERSUS | DESENCHUFADO CON MOONA FASCIA. REGGAETON VIEJO VS NUEVO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/BKLt-GeMcKI" title="VERSUS | A QUIÉN LE PERDONÁS UNA RED FLAG? A UNA PAREJA VS A UN/A AMIGO/A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="col">
-                    <H3>REGGAETON VIEJO VS NUEVO</H3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum esse, numquam libero, ex soluta doloribus ullam qui accusantium ab vero molestiae reiciendis. Dignissimos magnam doloremque veniam voluptatum mollitia pariatur adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea molestias expedita consequatur quasi veritatis sequi quam officia facilis labore tempore maxime eveniet rerum, cumque, totam, quaerat inventore temporibus dolore? Praesentium.</p>
+                    <h3>A QUIÉN LE PERDONÁS UNA RED FLAG? A UNA PAREJA VS A UN/A AMIGO/A</h3>
+                    <p>Nano se olvidó de su propio segmento de medias y trajo unas comunes.
+                        IMPERDONABLE.
+                        Ademas debatimos el concepto de red flag, lo que significa para nosotros, lo que perdonamos y los níveles de red y green flag que existen.
+                        Ni idea pero se picó.</p>
                 </div>
             </div>
-            <div class="row" id="video2">
+            <div class="row" id="card2">
+                <div class="col">
+                    <iframe src="https://www.youtube.com/embed/t4iDHTA9rQ4" title="VERSUS | EXISTEN LAS COSAS PARANORMALES VS TODO TIENE EXPLICACION" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col">
+                    <H3>EXISTEN LAS COSAS PARANORMALES VS TODO TIENE EXPLICACION</H3>
+                    <p>Hoy hablamos sobre historias y anécdotas paranormales y/o sustos que nos pegamos a veces por cosas que no sabemos ni por qué.
+                    Muchas gracias a toda la gente que mandó audio y compartió sus anécdotas!</p>
+                </div>
+            </div>
+        <div class="row" id="card3">
+                <div class="col">
+                    <iframe src="https://www.youtube.com/embed/uVURXWm1ZEY" title="VERSUS | INAUGURAMOS SEGMENTO ASTROLÓGICO Y NUEVO HORARIO. CREO EN LA ASTROLOGÍA VS NO CREO." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            <div class="col">
+                <H3>CREO EN LA ASTROLOGÍA VS NO CREO</H3>
+                <p>Volvió Nanito y fue toda energía el programa; vino con sus medias nuevas y nos tiró unas pistas para que adivinemos.
+                También hubo un invitado especial que vino a hablar de astrología y a responder nuestras preguntas sobre el tema. </p>
+            </div>
+        </div>
+            <div class="row" id="card4">
+                <div class="col">
+                    <iframe src="https://www.youtube.com/embed/4SLirQ2H5UE" title="VERSUS | FERNET VS BIRRA. NANO BORRACHO TIRA LOS MEJORES FACTOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
                 <div class="col">
                     <h3>FERNET VS BIRRA</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, illo consequuntur, reiciendis repellat minima tempora voluptatem eius hic explicabo autem quis qui dolores exercitationem porro ea aliquid.</p>
                 </div>
-                <div class="col">
-                    <iframe src="https://www.youtube.com/embed/4SLirQ2H5UE" title="VERSUS | FERNET VS BIRRA. NANO BORRACHO TIRA LOS MEJORES FACTOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
             </div>
-            <div class="row" id="video3">
+            <div class="row" id="card5">
                 <div class="col">
                     <iframe src="https://www.youtube.com/embed/QN9yNO0YwNY" title="VERSUS | MANCHA VS ESCONDIDAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="col">
                     <H3>MANCHA VS ESCONDIDAS</H3>
-                    <p class="text-prog">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum esse, numquam libero, ex soluta doloribus ullam qui accusantium ab vero molestiae reiciendis. Dignissimos magnam doloremque veniam voluptatum mollitia pariatur adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea molestias expedita consequatur quasi veritatis sequi quam officia facilis labore tempore maxime eveniet rerum, cumque, totam, quaerat inventore temporibus dolore? Praesentium.</p>
+                    <p class="text-prog">Revivimos los juegos de nuestra infancia y recordamos momentos que nos mantienen humildes.
+                        Acaso shippeamos fuerte a San Martin con Belgrano? Nada de todo esto tiene sentido, lo sabemos.</p>
+                </div>
+            </div>
+            <div class="row" id="card6">
+                <div class="col">
+                    <iframe src="https://www.youtube.com/embed/9F6IlP5WJVU" title="VERSUS | PARA UNA PRIMERA CITA: INVITO A SALIR VS ESPERO A QUE ME INVITEN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col">
+                    <h3>INVITO A SALIR VS ESPERO A QUE ME INVITEN</h3>
+                    <p>Tuvimos dos invitados de lujo y la rompieron toda! Le pusimos cara a insisto y vino nuestro amigo Juampi para responder preguntas y hablar sobre masculinidad frágil y las presiones sociales que tenemos las mujeres y los hombres.
+                        A Juampi le rompieron el corazón y mandó un mensaje especial en vivo,
+                        Si querés reirte y a la vez replantearte la vida, este es el programa perfecto.</p>
                 </div>
             </div>
             

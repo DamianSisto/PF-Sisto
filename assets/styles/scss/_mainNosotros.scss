@@ -1,0 +1,33 @@
+main {
+    #mainCarousel {
+        position: relative;
+        #mainNosotros {
+            #carouselExampleCaptions{
+                .carousel-inner{
+                    width: 70vh;
+                    height: auto;
+                    border-radius: 10px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+// .carousel{
+//     width: 60%;
+//     height: auto;
+//     justify-content: center;
+// }
+// #mainNosotros{
+//     background-color: rgb(0, 255, 98);
+//     justify-content: center;
+//     display: inline-block;
+// }
+// #carouselExampleCaptions{
+//     align-items: center;
+// }
+// #mainCarousel{
+//     width: 40vh;
+//     height: 40vh;
+// }

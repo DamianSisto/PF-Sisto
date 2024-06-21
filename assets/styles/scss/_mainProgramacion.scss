@@ -1,0 +1,68 @@
+#card1{
+    background-color: #f26d9ed1;
+    border-radius: 10px;
+    padding-top: 1%;
+}
+#card2{
+    background-color: #04acbfd4;
+    border-radius: 10px;
+    padding-top: 1%;
+}
+#card3{
+    background-color: #ff7e4bd2;
+    border-radius: 10px;
+    padding-top: 1%;
+}
+#card4{
+    background-color: #00b689cd;
+    border-radius: 10px;
+    padding-top: 1%;
+}
+#card5{
+    background-color: #ffca0bc2;
+    border-radius: 10px;
+    padding-top: 1%;
+}
+#card6{
+    background-color: #c584bcd0;
+    border-radius: 10px;
+    padding-top: 1%;
+}
+
+@media (max-width: 450px){
+    #programacion{
+        padding-top: 10vh;
+        #card1{
+            justify-content: center;
+            align-items: center;
+            background-color: #f26d9ed1;
+            border-radius: 10px;
+            padding-top: 7%;
+        }
+        #card2{
+            background-color: #04acbfd4;
+            border-radius: 10px;
+            padding-top: 7%;
+        }
+        #card3{
+            background-color: #ff7e4bd2;
+            border-radius: 10px;
+            padding-top: 7%;
+        }
+        #card4{
+            background-color: #00b689cd;
+            border-radius: 10px;
+            padding-top: 7%;
+        }
+        #card5{
+            background-color: #ffca0bc2;
+            border-radius: 10px;
+            padding-top: 7%;
+        }
+        #card6{
+            background-color: #c584bcd0;
+            border-radius: 10px;
+            padding-top: 7%;
+        }
+    }
+}

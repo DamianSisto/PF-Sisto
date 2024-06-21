@@ -1,185 +1,34 @@
 @import "variables";
-
-
-body{
-    background-image: url(./../../images/versusBody.JPG);
-    background-size: cover !important;
-    // background-attachment: fixed;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // margin: 0;
-    // box-sizing: border-box;
-    // font-family: sans-serif;
-}
-
-
-@media (max-width:450px){
-    .body{
-        background-image: url(./../../images/versusBody-mobile.jpg);
-        margin: 0;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
+@import "footer";
+@import "header";
+@import "mainIndex";
+@import "mainNosotros";
+@import "mainProgramacion";
+@import "mainTrabaja";
+@import "mainVisitanos";
+@import "body";
 
 ///////////////////// HEADER ///////////////////////////
 
-.header{
-    // background-color: cadetblue;
-    
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    #logoHorizontal {
-        text-align: center;
-        height: auto;
-        width: auto;
-        max-width: 40%;
-        margin: 3%;
-      }
-    nav {
-        background-color: rgb(42, 37, 37) !important;
-        height: 10vh;
-        display: flex;
-        // justify-content: end;
-        align-items: center;
-        font-weight: bold;
-        ul li {
-            display: inline-block;
-            padding: 0px 15px;
-            justify-content: center;
-            align-items: center;
-            a {
-                text-decoration: none;
-                color: rgb(221, 214, 197);
-                font-size: 1.2rem;
-                &:hover {
-                    color: rgb(240, 208, 164);
-                    /* box-shadow: 0px 0px 15px rgb(142, 252, 132); */
-                  } 
-              }
-          }
-    }
-}
 
-
-@media (max-width: 990px){
-    #logoHorizontal{
-        max-width: 30%;
-    }
-}
-
-.logo {
-    width: 40%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    padding-left: 2vh;
-    padding-top: 2vh;
-}
 //////////////////////////// MAIN ////////////////////////////
-main {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    border-color: coral;
-    padding-bottom: 50px;
-    ul li{
-        list-style:none;
-        margin-bottom: 1%;
-    }
-}
 
-#PMain{
-    background-color: rgba(238, 130, 238, 0.908);
-    border-radius: 10px;
-    padding: 1%;
-}
 
-#formVisitanos{
-    background-color: rgba(240, 194, 108, 0.852);
-    border-radius: 10px;
-    padding: 2%;
-}
 
-#formTrabaja{
-    background-color: rgba(149, 194, 243, 0.852);
-    border-radius: 10px;
-    padding: 2%;
-}
+
+
+
+
 
 .container text-center{
     padding-top: 2%;
 }
 
-
-#video1{
-    background-color: #f26d9ed1;
-    border-radius: 10px;
-    padding-top: 2%;
-}
-#video2{
-    background-color: #04acbfd4;
-    border-radius: 10px;
-    padding: 2%;
-}
-#video3{
-    background-color: #ff7e4bd2;
-    border-radius: 10px;
-    padding-top: 2%;
-}
-#video4{
-    background-color: #00b689cd;
-    border-radius: 10px;
-    padding-top: 2%;
-}
-#video5{
-    background-color: #ffca0bc2;
-    border-radius: 10px;
-    padding-top: 2%;
-}
-#video6{
-    background-color: #c584bcd0;
-    border-radius: 10px;
-    padding-top: 2%;
-}
-
-.videoDerecha{
-    text-align: right;
-    width: 50;
-    height:auto;
-}
-
-
-.videoIzquierda{
-    text-align: left;
-    width: 50;
-    height:auto;
-}
-
-#PMain {
-    background-color: lightpink;
-    border-radius: 10px;
-  }
-
-.form-label{
-    background-color: khaki;
-    border-radius: 5px;}
-
 section{
     padding-top: 5%;
 }
 
-.PMain{
-background-color: lightpink;
-border-radius: 10px;
-}
 
-.carousel{
-    width: 40%;
-    height: auto;
-}
 
 aside{
   padding: 5%;  
@@ -187,72 +36,17 @@ aside{
   padding-bottom: 50px;
 }
 
-.MainNosotros{
-    background-color: blue;
-}
 
-#carouselExampleCaptions{
-    background-color: aquamarine;
-}
 
-.fotosConocenos{
-    width: 40%;
-    height: auto;
-}
 
-.logoFooter{
-    width: 5%;
-    height: auto;
-}
 
-.loguito{
-    justify-self: center;
-    padding-right: 20%;
-}
 
-@media(max-width:320px) {
-    .logoFooter{
-        width: 2%;
-        height: auto;
-    }
-    .loguito{
-        justify-self: center;
-        padding-right: 10%;
-    }
-    .footer li .logoFooter{
-        width: 2vh;
-        height: auto;
-    }
-    .footer li{
-        list-style-type: none;
-        display: inline;
-        margin-right: 2vh;
-        position: static;
-    }
-}
 
+
+
+#mapaVersus{
+    contain-intrinsic-height: 50%;
+    width: auto;
+}
 
 /////////////  FOOTER  ///////////////
-
-.footer{
-    background-color: brown;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    bottom: 0;
-    ul{
-        margin-bottom: 1vh;
-        margin-top: 1vh;
-    }
-    li{
-        list-style-type: none;
-        display: inline;
-        margin-right: 4vh;
-        position: static;
-        .logoFooter{
-            width: 5vh;
-            height: auto;
-        }
-    }
-}
