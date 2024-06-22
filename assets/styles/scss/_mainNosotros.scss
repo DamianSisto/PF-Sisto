@@ -90,7 +90,8 @@ body.body {
 }
 
 .header {
-    z-index: 1;  // Asegura que el nav esté siempre por encima del carousel
+    z-index: 1;
+    //El carousel se superponia con el header/nav. Por lo que tuve que investigar en internet y me resulto esta opcion.
 }
 
 #mainNos {
@@ -118,7 +119,7 @@ body.body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    margin-top: 70px; // Ajusta esto según la altura del header
+    margin-top: 70px;
 }
 
 #mainCarousel {
