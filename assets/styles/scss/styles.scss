@@ -1,0 +1,38 @@
+@import "variables";
+@import "footers";
+@import "header";
+@import "mainIndex";
+@import "mainNosotros";
+@import "mainProgramacion";
+@import "mainTrabaja";
+@import "mainVisitanos";
+@import "bodys";
+
+.container text-center{
+    padding-top: 2%;
+}
+
+section{
+    padding-top: 5%;
+}
+
+aside{
+  padding: 5%;  
+  justify-self: unset;
+  padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+#mapaVersus{
+    contain-intrinsic-height: 50%;
+    width: auto;
+}
+
+/////////////  FOOTER  ///////////////
