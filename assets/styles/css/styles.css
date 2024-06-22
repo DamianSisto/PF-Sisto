@@ -40,17 +40,17 @@
   padding-right: 20%;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .logoFooter {
-    width: 2%;
+    width: 20%;
     height: auto;
   }
   .loguito {
     justify-self: center;
-    padding-right: 10%;
+    padding-right: 5%;
   }
   .footer li .logoFooter {
-    width: 2vh;
+    width: 4vh;
     height: auto;
   }
   .footer li {
@@ -58,6 +58,9 @@
     display: inline;
     margin-right: 2vh;
     position: static;
+  }
+  .nav-link {
+    padding: 3% !important;
   }
 }
 .header {
@@ -73,7 +76,7 @@
   margin: 3%;
 }
 .header nav {
-  background-color: rgb(110, 8, 8) !important;
+  background-color: rgb(22, 22, 22) !important;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -91,31 +94,34 @@
   font-size: 1.2rem;
 }
 .header nav ul li a:hover {
-  color: rgb(240, 208, 164);
+  color: rgb(237, 206, 161);
 }
 
-@media (max-width: 450px) {
-  header #nav .container-fluid {
+@media (max-width: 480px) {
+  .header #nav .container-fluid {
     display: inline;
   }
-  header #nav .container-fluid .navbar-toggler {
-    border-color: aliceblue;
-    border-color: aliceblue;
+  .header #nav .container-fluid .navbar-toggler {
+    border-color: rgba(98, 98, 98, 0.86);
+    border-width: 2px;
   }
-  header #nav .container-fluid .navbar-toggler .navbar-toggler-icon {
-    border-color: aliceblue;
-    border-bottom: 8px;
-  }
-  #logoHorizontal {
-    max-width: 30%;
-  }
-  #navbarSupportedContent {
-    background-color: rgb(101, 101, 101);
-  }
-  .navbar-toggler {
-    background-color: aqua;
+  .header #nav .container-fluid #navbarSupportedContent {
+    background-color: rgba(93, 93, 93, 0.911);
+    border-radius: 6px;
   }
 }
+#logoHorizontal {
+  max-width: 30%;
+}
+
+.navbar-toggler {
+  border-color: bisque;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgb(98, 98, 98)" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
 .logo {
   width: 40%;
   height: auto;
@@ -125,12 +131,42 @@
   padding-top: 2vh;
 }
 
+@media (max-width: 600px) {
+  .header #nav .container-fluid {
+    display: inline;
+  }
+  .header #nav .container-fluid .navbar-toggler {
+    border-color: rgba(98, 98, 98, 0.86);
+    border-width: 2px;
+  }
+  .header #nav .container-fluid #navbarSupportedContent {
+    background-color: rgba(93, 93, 93, 0.911);
+    border-radius: 6px;
+  }
+}
 main {
   margin-top: 10%;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;
   padding-bottom: 50px;
+}
+main .whatsapp-logo {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  display: inline-block;
+  width: 50px !important;
+  height: 50px !important;
+  transition: transform 0.3s ease;
+}
+main .whatsapp-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main .whatsapp-logo:hover {
+  transform: scale(1.4);
 }
 main ul li {
   list-style: none;
@@ -155,7 +191,7 @@ main #PMain #fontIndex {
   padding: 1% !important;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   main {
     margin-top: 10%;
     margin-left: 5%;
@@ -194,14 +230,90 @@ main #PMain #fontIndex {
     border-radius: 10px;
   }
 }
-main #mainCarousel {
-  position: relative;
+body.body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-main #mainCarousel #mainNosotros #carouselExampleCaptions .carousel-inner {
-  width: 70vh;
+
+.contenedorNosotros {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  z-index: 1;
+}
+
+#mainNos {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 70px;
+}
+#mainNos .whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 50px !important;
+  height: 50px !important;
+  transition: transform 0.3s ease;
+}
+#mainNos .whatsapp-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#mainNos .whatsapp-logo:hover {
+  transform: scale(1.4);
+}
+
+#mainCarousel {
+  position: relative;
+  padding-top: 20px;
+}
+#mainCarousel #mainNosotros #carouselExampleCaptions .carousel-inner {
+  max-width: 70vh;
   height: auto;
   border-radius: 10px;
   position: relative;
+  overflow: hidden;
+}
+#mainCarousel #mainNosotros #carouselExampleCaptions img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  #mainCarousel #mainNosotros #carouselExampleCaptions {
+    max-width: 100%;
+    height: auto;
+  }
+  #mainCarousel #mainNosotros #carouselExampleCaptions img {
+    width: 100%;
+    height: auto;
+  }
+}
+.whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 50px !important;
+  height: 50px !important;
+  transition: transform 0.3s ease;
+}
+.whatsapp-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.whatsapp-logo:hover {
+  transform: scale(1.4);
 }
 
 #card1 {
@@ -240,54 +352,120 @@ main #mainCarousel #mainNosotros #carouselExampleCaptions .carousel-inner {
   padding-top: 1%;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   #programacion {
     padding-top: 10vh;
   }
   #programacion #card1 {
     justify-content: center;
     align-items: center;
-    background-color: rgba(242, 109, 158, 0.8196078431);
+    background-color: rgba(242, 109, 158, 0.8588235294);
     border-radius: 10px;
     padding-top: 7%;
+    margin-bottom: 5%;
+  }
+  #programacion #card1 .col .videoProg {
+    height: 25vh;
+    width: 70vw;
   }
   #programacion #card2 {
-    background-color: rgba(4, 172, 191, 0.831372549);
+    background-color: rgba(4, 172, 191, 0.8705882353);
     border-radius: 10px;
     padding-top: 7%;
+    margin-bottom: 5%;
+  }
+  #programacion #card2 .col .videoProg {
+    height: 25vh;
+    width: 70vw;
   }
   #programacion #card3 {
-    background-color: rgba(255, 126, 75, 0.8235294118);
+    background-color: rgba(255, 126, 75, 0.8588235294);
     border-radius: 10px;
     padding-top: 7%;
+    margin-bottom: 5%;
+  }
+  #programacion #card3 .col .videoProg {
+    height: 25vh;
+    width: 70vw;
   }
   #programacion #card4 {
-    background-color: rgba(0, 182, 137, 0.8039215686);
+    background-color: rgba(0, 182, 137, 0.8588235294);
     border-radius: 10px;
     padding-top: 7%;
+    margin-bottom: 5%;
+  }
+  #programacion #card4 .col .videoProg {
+    height: 25vh;
+    width: 70vw;
   }
   #programacion #card5 {
-    background-color: rgba(255, 202, 11, 0.7607843137);
+    background-color: rgba(255, 202, 11, 0.8784313725);
     border-radius: 10px;
     padding-top: 7%;
+    margin-bottom: 5%;
+  }
+  #programacion #card5 .col .videoProg {
+    height: 25vh;
+    width: 70vw;
   }
   #programacion #card6 {
-    background-color: rgba(197, 132, 188, 0.8156862745);
+    background-color: rgba(197, 132, 188, 0.9019607843);
     border-radius: 10px;
     padding-top: 7%;
+    margin-bottom: 5%;
+  }
+  #programacion #card6 .col .videoProg {
+    height: 25vh;
+    width: 70vw;
   }
 }
+.whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 50px !important;
+  height: 50px !important;
+  transition: transform 0.3s ease;
+}
+.whatsapp-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.whatsapp-logo:hover {
+  transform: scale(1.4);
+}
+
 #formTrabaja {
   background-color: rgba(149, 194, 243, 0.852);
   border-radius: 10px;
   padding: 2%;
 }
 
-@media (max-width: 450px) {
-  #trabaja {
+@media (max-width: 480px) {
+  .contenedor-trabaja {
     padding-top: 10vh;
   }
 }
+.whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 50px !important;
+  height: 50px !important;
+  transition: transform 0.3s ease;
+}
+.whatsapp-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.whatsapp-logo:hover {
+  transform: scale(1.4);
+}
+
 #formVisitanos {
   background-color: rgba(240, 194, 108, 0.852);
   border-radius: 10px;
@@ -308,7 +486,7 @@ div #mapaVersus {
   border-radius: 10px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   #form-visitanos {
     padding-top: 10vh;
   }
@@ -322,12 +500,12 @@ div #mapaVersus {
   }
 }
 body {
-  background-image: url(./../../images/versusBody.JPG);
+  background-image: url(./../../images/bodyDeckstop.png);
   background-size: cover !important;
   background-attachment: fixed;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .body {
     background-image: url(./../../images/mobile.tres.png);
     margin: 0;

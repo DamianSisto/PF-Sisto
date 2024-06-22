@@ -1,33 +1,160 @@
-main {
-    #mainCarousel {
-        position: relative;
-        #mainNosotros {
-            #carouselExampleCaptions{
-                .carousel-inner{
-                    width: 70vh;
-                    height: auto;
-                    border-radius: 10px;
-                    position: relative;
-                }
+// body.body {
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// .contenedorNosotros {
+//     position: fixed;
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100vh;
+// }
+
+// #mainNos {
+//     .whatsapp-logo {
+//         position: fixed;
+//         bottom: 20px;
+//         right: 20px;
+//         display: inline-block;
+//         width: 50px !important;
+//         height: 50px !important;
+//         transition: transform 0.3s ease;
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: contain;
+//         }
+
+//         &:hover {
+//             transform: scale(1.4);
+//         }
+//     }
+//     flex: 1;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 20px;
+    
+// }
+
+// #mainCarousel {
+//     position: relative;
+//     padding-top: 20px;
+
+//     #mainNosotros {
+//         #carouselExampleCaptions {
+//             .carousel-inner {
+//                 max-width: 70vh;
+//                 height: auto;
+//                 border-radius: 10px;
+//                 position: relative;
+//                 overflow: hidden;
+//             }
+
+//             img {
+//                 width: 100%;
+//                 height: auto;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 480px) {
+//     #mainCarousel {
+//         #mainNosotros {
+//             #carouselExampleCaptions {
+//                 max-width: 100%;
+//                 height: auto;
+
+//                 img {
+//                     width: 100%;
+//                     height: auto;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+body.body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedorNosotros {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    z-index: 1;  // Asegura que el nav esté siempre por encima del carousel
+}
+
+#mainNos {
+    .whatsapp-logo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: inline-block;
+        width: 50px !important;
+        height: 50px !important;
+        transition: transform 0.3s ease;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 70px; // Ajusta esto según la altura del header
+}
+
+#mainCarousel {
+    position: relative;
+    padding-top: 20px;
+
+    #mainNosotros {
+        #carouselExampleCaptions {
+            .carousel-inner {
+                max-width: 70vh;
+                height: auto;
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
             }
         }
     }
 }
 
-// .carousel{
-//     width: 60%;
-//     height: auto;
-//     justify-content: center;
-// }
-// #mainNosotros{
-//     background-color: rgb(0, 255, 98);
-//     justify-content: center;
-//     display: inline-block;
-// }
-// #carouselExampleCaptions{
-//     align-items: center;
-// }
-// #mainCarousel{
-//     width: 40vh;
-//     height: 40vh;
-// }
+@media (max-width: 480px) {
+    #mainCarousel {
+        #mainNosotros {
+            #carouselExampleCaptions {
+                max-width: 100%;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

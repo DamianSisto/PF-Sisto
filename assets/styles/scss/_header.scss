@@ -10,7 +10,7 @@
         margin: 3%;
       }
     nav {
-        background-color: rgb(110, 8, 8) !important;
+        background-color: rgb(22, 22, 22) !important;
         height: 10vh;
         display: flex;
         align-items: center;
@@ -25,24 +25,25 @@
                 color: rgb(221, 214, 197);
                 font-size: 1.2rem;
                 &:hover {
-                    color: rgb(240, 208, 164);
+                    color: rgb(237, 206, 161);
                   } 
               }
           }
     }
 }
 
-@media (max-width: 450px){
-    header{
+@media (max-width: 480px){
+    .header{
         #nav{
             .container-fluid{
                 display: inline;
-                .navbar-toggler{
-                    border-color: aliceblue;
-                    border-color: aliceblue;
-                    .navbar-toggler-icon{
-                        border-color: aliceblue;
-                        border-bottom: 8px;
+                    .navbar-toggler{
+                        border-color: rgba(98, 98, 98, 0.86);
+                        border-width: 2px;
+                    }
+                    #navbarSupportedContent{
+                        background-color: rgba(93, 93, 93, 0.911);
+                        border-radius: 6px;
                     }
                 }
             }
@@ -52,13 +53,13 @@
         max-width: 30%;
     }
     
-    #navbarSupportedContent{
-        background-color: rgb(101, 101, 101);
+
+    .navbar-toggler {
+        border-color: bisque;
     }
-    .navbar-toggler{
-        background-color: aqua;
+    .navbar-toggler .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgb(98, 98, 98)" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
     }
-}
 
 .logo {
     width: 40%;
@@ -68,3 +69,21 @@
     padding-left: 2vh;
     padding-top: 2vh;
 }
+
+@media (max-width: 600px){
+    .header{
+        #nav{
+            .container-fluid{
+                display: inline;
+                    .navbar-toggler{
+                        border-color: rgba(98, 98, 98, 0.86);
+                        border-width: 2px;
+                    }
+                    #navbarSupportedContent{
+                        background-color: rgba(93, 93, 93, 0.911);
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+    }
