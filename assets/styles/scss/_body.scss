@@ -1,0 +1,17 @@
+body{
+    background-image: url(./../../images/bodyDeckstop.png);
+    background-size: cover !important;
+    background-attachment: fixed;
+}
+
+
+@media (max-width: 480px){
+    .body{
+/// tomé una foto del equipo de conductores y con photoshop y canva le puse fondo para darle mas protagonismo al sector del main  /////
+        background-image: url(./../../images/mobile.tres.png);
+        margin: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        bottom: 0;
+    }
+}

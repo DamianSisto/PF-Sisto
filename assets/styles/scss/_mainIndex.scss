@@ -1,0 +1,207 @@
+// main {
+//     .whatsapp-logo {
+//         position: fixed;
+//         bottom: 40px;
+//         right: 20px;
+//         display: inline-block;
+//         width: 50px !important;
+//         height: 50px !important;
+//         transition: transform 0.3s ease;
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: contain;
+//         }
+
+//         &:hover {
+//             transform: scale(1.4);
+//         }
+//     }
+//     margin-top: 10%;
+//     margin-left: 5%;
+//     margin-right: 5%;
+//     margin-bottom: 5%;
+//     // border-color: rgb(80, 194, 255);
+//     padding-bottom: 50px;
+//     ul li{
+//         list-style:none;
+//         margin-bottom: 1%;
+//     }
+//     #PMain{
+//         background-color: rgba(69, 69, 69, 0.811);
+//         border-radius: 10px;
+//         padding: 1%;
+//         #col{
+//             #videoIndex{
+//                 border-radius: 10px;
+//                 padding: 0%;
+//                 #entrada{
+//                     height: 30vh;
+//                     width: 54vh;
+//                     border-radius: 10px;
+//                 }
+                
+//             } 
+//         }
+//         #fontIndex{
+//             color: antiquewhite;
+//             padding: 1% !important;
+//         }
+//     }
+// }
+
+// @media (max-width: 480px){
+//     main {
+//         margin-top: 10%;
+//         margin-left: 5%;
+//         margin-right: 5%;
+//         margin-bottom: 5%;
+//         padding-bottom: 50px;
+//         ul li{
+//             list-style:none;
+//             margin-bottom: 1%;
+//             #font.index{
+//                 h4{
+//                     font-size: 2px;
+//                 }
+//             }
+//         }
+//         #contenedorMain{
+//             padding-top: 8vh;
+//             margin-top: 10%;
+//             margin-bottom: 100%;
+//             //#col{
+//                 justify-content: center;
+//                 #PMain{
+//                     display: block;
+//                     border-radius: 10px;
+//                     padding: 0%;
+//                     font-size: 16px;
+//                     justify-content: space-around;
+//                     background-color: rgba(69, 69, 69, 0.832);
+//                     #videoIndex{
+//                         padding: 0% !important;
+//                         padding-top: 50vh !important;
+//                         #entrada{
+//                             height: 20vh;
+//                             width: 35vh;
+//                             border-radius: 10px;
+//                         }
+                        
+//                     }
+//                 }
+//            // }      
+//         }
+//     }
+// }
+
+main {
+    .whatsapp-logo {
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        display: inline-block;
+        width: 50px !important;
+        height: 50px !important;
+        transition: transform 0.3s ease;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 50px;
+
+    ul li {
+        list-style: none;
+        margin-bottom: 1%;
+    }
+
+    #PMain {
+        background-color: rgba(69, 69, 69, 0.811);
+        border-radius: 10px;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #col {
+            #videoIndex {
+                border-radius: 10px;
+                padding: 0%;
+
+                #entrada {
+                    height: 30vh;
+                    width: 100%;
+                    max-width: 54vh;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        #fontIndex {
+            color: antiquewhite;
+            padding: 1% !important;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        padding-bottom: 50px;
+        ul li {
+            list-style: none;
+            margin-bottom: 1%;
+        }
+
+        #contenedorMain {
+            padding-top: 8vh;
+            margin-top: 10%;
+            margin-bottom: 100%;
+
+            #PMain {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 10px;
+                padding: 0%;
+                font-size: 16px;
+                background-color: rgba(69, 69, 69, 0.832);
+
+                #videoIndex {
+                    padding: 0 !important;
+                    margin-bottom: 2rem;
+
+                    #entrada {
+                        width: 100%;
+                        height: 80%;
+                        max-width: 35vh;
+                        border-radius: 10px;
+                        padding-top: 5vh;
+                    }
+                }
+
+                #fontIndex {
+                    text-align: center;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
