@@ -1,12 +1,4 @@
-@import "variables";
-@import "footers";
-@import "header";
-@import "mainIndex";
-@import "mainNosotros";
-@import "mainProgramacion";
-@import "mainTrabaja";
-@import "mainVisitanos";
-@import "bodys";
+
 
 .container text-center{
     padding-top: 2%;
@@ -36,3 +28,12 @@ aside{
 }
 
 /////////////  FOOTER  ///////////////
+@import "variables";
+@import "footers";
+@import "header";
+@import "mainIndex";
+@import "mainNosotros";
+@import "mainProgramacion";
+@import "mainTrabaja";
+@import "mainVisitanos";
+@import "bodys";
